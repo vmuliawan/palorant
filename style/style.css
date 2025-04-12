@@ -24,6 +24,11 @@ section{
 body{
     margin: 0;
     font-family: 'Sharetech';
+    background-image: url(../assets/partial/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1 {
@@ -127,7 +132,6 @@ nav .logo:hover{
 }
 
 .bug-report{
-    border-radius: 20%;
     margin-left: auto;
     margin-right: 2rem;
     height: 70%;
