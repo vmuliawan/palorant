@@ -17,6 +17,10 @@ header{
     
 }
 
+section{
+    padding-top: 5rem;
+}
+
 body{
     margin: 0;
     font-family: 'Sharetech';
@@ -122,6 +126,22 @@ nav .logo:hover{
     border-bottom: 0;
 }
 
+.bug-report{
+    border-radius: 20%;
+    margin-left: auto;
+    margin-right: 2rem;
+    height: 70%;
+    background-color: var(--secondary-color);
+}
+.bug-report:hover{
+    color: var(--secondary-color);
+    background-color: var(--neutral-color);
+    border: 2px solid var(--secondary-color);
+    border-right: 4px solid var(--secondary-color);
+    border-bottom: 6px solid var(--secondary-color);
+    transition: .3s ease-in-out;
+}
+
 #sidebar-active{
     display: none;
 }
@@ -133,10 +153,15 @@ nav .logo:hover{
 
 .logo{
     margin-left: 2rem;
+    display: block;
 }
 
 .logo img{
     width: 3rem;
+}
+
+.logo-responsive{
+    display: none;
 }
 
 
@@ -160,6 +185,18 @@ nav .logo:hover{
         width: 100%;
         padding: 2rem 3rem;
         justify-content: flex-start;
+        border-bottom: 1px solid var(--text-color);
+    }
+
+    .bug-report{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 2rem 4rem;
+        justify-content: flex-start;
+        border-bottom: 1px solid var(--text-color);
+        background-color: var(--primary-color);
+        border-radius: 0;
     }
 
     .open-sidebar-button, .close-sidebar-button{
@@ -169,6 +206,7 @@ nav .logo:hover{
 
     .close-sidebar-button{
         margin-top: 1.5rem;
+        border-bottom: 1px solid var(--text-color);
     }
     
     #sidebar-active:checked ~ .link-container{
@@ -183,6 +221,15 @@ nav .logo:hover{
     }
     .logo{
         margin: 0;
+        padding: 1rem 3rem;
+    }
+
+    .logo-responsive{
+        display:block;
+        margin-left: 2rem;
+    }
+    .logo-responsive{
+        width: 3rem;
     }
 }
 
