@@ -298,7 +298,39 @@
     cursor: not-allowed;
 }
 
+.maps-slider-container{
+    display: flex;
+    background-color: var(--primary-color);
+}
 
+.maps-slider-container input{
+    appearance: none;
+}
+
+.maps-slider-container .dots{
+    bottom: 70px;
+    z-index: 1;
+    display: flex;
+    gap: 6px;
+
+}
+
+.maps-slider-container .dots label{
+    width: 20px;
+    height: 20px;
+    background: var(--neutral-color);
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0.5;
+    border: 2px solid var(--primary-color);
+}
+.maps-slider-container input:nth-child(1):checked ~ .dots label:nth-child(1),
+.maps-slider-container input:nth-child(2):checked ~ .dots label:nth-child(2),
+.maps-slider-container input:nth-child(3):checked ~ .dots label:nth-child(3),
+.maps-slider-container input:nth-child(4):checked ~ .dots label:nth-child(4),
+.maps-slider-container input:nth-child(5):checked ~ .dots label:nth-child(5){
+    opacity: 1;
+}
 
 @media (min-width: 600px) {
     .card {
