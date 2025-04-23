@@ -81,3 +81,47 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 3000);
     });
 });
+
+const roles = {
+    controller: {
+        title: "CONTROLLER",
+        desc: "Controllers are experts in slicing up dangerous territory to set their team up for success.",
+        agents: "assets/index/roles/controllergroup.png"
+    },
+    duelist: {
+        title: "DUELIST",
+        desc: "Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first.",
+        agents: "assets/index/roles/duelistgroup.png"
+    },
+    initiator: {
+        title: "INITIATOR",
+        desc: "Initiators challenge angles by setting up their team to enter contested ground and push defenders away.",
+        agents: "assets/index/roles/initiatorgroup.png"
+    },
+    sentinel: {
+        title: "SENTINEL",
+        desc: "Sentinels are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds.",
+        agents: "assets/index/roles/sentinelgroup.png"
+    },
+}
+
+function selectRole(role){
+    const { title, desc, agents } = roles[role];
+
+  const agentsimg = document.getElementById("role-group-image");
+  agentsimg.classList.add("slide-out")
+
+  setTimeout(() => {
+    document.getElementById("role-agent-title").textContent = title;
+    document.getElementById("role-agent-text").textContent = desc;
+
+    
+    agentsimg.src = agents
+    agentsimg.classList.remove("slide-out")
+    agentsimg.classList.add("slide-in")
+
+    setTimeout(() => {
+        agentsimg.classList.remove("slide-in")
+    }, 100);
+  }, 300)
+}

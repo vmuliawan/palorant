@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/index.css" />
     <link rel="icon" href="assets/partial/logo.png" type="image/png">
-    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
     <title>Palorant</title>
   </head>
   <body>
@@ -170,6 +170,7 @@
       </div>
 
       <div class="maps-slider-container">
+        <h1 class="maps-text">MAPS</h1>
         <input type="radio" id="slide1" name="group" checked>
         <input type="radio" id="slide2" name="group">
         <input type="radio" id="slide3" name="group">
@@ -217,11 +218,34 @@
       </div>
       
       <div class="role-agent-wrapper">
-        <div class="role-agent-image"></div>
-        <div class="role-agent-desc"></div>
+        <div class="role-agent-image" id="role-agent-image">
+          <img src="assets/index/roles/controllergroup.png" alt="" class="role-group-image" id="role-group-image">
+        </div>
+        <div class="role-agent-desc">
+          <h1 class="title-roles">ROLES</h1>
+          <div class="role-btn-wrapper">
+            <button class="role-btn btn-controller" onclick="selectRole('controller')">
+              <img src="assets/index/roles/controller.png" alt="">
+            </button>
+            <button class="role-btn btn-duelist" onclick="selectRole('duelist')">
+              <img src="assets/index/roles/duelist.png" alt="">
+            </button>
+            <button class="role-btn btn-initiator" onclick="selectRole('initiator')">
+              <img src="assets/index/roles/initiator.png" alt="">
+            </button>
+            <button class="role-btn btn-sentinel" onclick="selectRole('sentinel')">
+              <img src="assets/index/roles/sentinel.png" alt="">
+            </button>
+          </div>
+          <h1 id="role-agent-title">CONTROLLER</h1>
+          <p id="role-agent-text">Controllers are experts in slicing up dangerous territory to set their team up for success.</p>
+          <button class="all-agent-btn">SEE ALL AGENT</button>
+        </div>
       </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      
+    </footer>
   </body>
 </html>
