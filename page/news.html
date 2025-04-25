@@ -3,65 +3,292 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/news.css">
+    <link rel="icon" href="../assets/partial/logo.png" type="image/png" />
+    <script src="../js/index.js"></script>
     <title>Palorant</title>
   </head>
   <body>
     <header>
       <nav>
+        <img
+          src="../assets/partial/logo.png"
+          alt=""
+          srcset=""
+          class="logo-responsive"
+        />
         <input type="checkbox" id="sidebar-active" />
         <label for="sidebar-active" class="open-sidebar-button">
-          <img src="assets/partial/open.png" alt="notfound" srcset="" />
+          <img src="../assets/partial/open.png" alt="notfound" srcset="" />
         </label>
-  
+
         <div class="link-container">
           <div class="logo-container">
             <label for="sidebar-active" class="close-sidebar-button">
-              <img src="assets/partial/close.png" alt="notfound" srcset="" />
+              <img src="../assets/partial/close.png" alt="notfound" srcset="" />
             </label>
             <a href="" class="logo">
-              <img src="assets/partial/logo.png" alt="" srcset="" />
+              <img src="../assets/partial/logo.png" alt="" srcset="" />
             </a>
           </div>
-          <a href="" class="link-nav">Home</a>
-          <a href="" class="link-nav">Agents</a>
-          <a href="" class="link-nav">Maps</a>
-          <a href="" class="link-nav">Latest News</a>
-          <a href="" class="link-nav">Bug Report</a>
+          <a href="../index.html" class="link-nav">Home</a>
+          <a href="agents.html" class="link-nav">Agents</a>
+          <a href="maps.html" class="link-nav">Maps</a>
+          <a href="news.html" class="link-nav">Latest News</a>
+          <a href="report.html" class="bug-report">Bug Report</a>
         </div>
       </nav>
     </header>
+
     <section>
-      <div style="margin-bottom: 700px">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
-          doloremque quibusdam labore, nobis beatae voluptates soluta
-          consequuntur unde sapiente voluptas aspernatur reprehenderit minus
-          ipsa assumenda quasi iste amet? Quis qui, repellat eligendi modi quas
-          praesentium ullam, dolorem voluptate veritatis, omnis culpa quasi? Id
-          quidem suscipit corporis inventore accusamus eveniet velit minus
-          voluptate expedita nostrum omnis dolorem, consequuntur beatae
-          accusantium enim quia ad? Autem dolore, ipsum, excepturi delectus sint
-          animi nostrum pariatur fuga magnam quos quis? Qui deleniti voluptas
-          beatae. Consequuntur reprehenderit deserunt omnis asperiores,
-          perferendis esse libero quae porro velit unde. Eveniet sit nobis
-          tempore porro, saepe ut! Aliquid, enim? Ex accusantium tenetur
-          laudantium pariatur error ducimus molestias id quo veniam vero dolore
-          facilis obcaecati in voluptas aliquid, quam et repellat quae unde
-          vitae voluptatum quas fugit quis consectetur? Quos commodi, in dolorum
-          facere cumque doloribus odit eaque numquam, magni mollitia
-          reprehenderit cupiditate obcaecati dolor. Similique tempore doloremque
-          facilis labore iure pariatur doloribus quaerat repellendus. Nihil
-          nesciunt neque repellendus fugiat qui dignissimos, possimus ad,
-          numquam atque esse quae impedit adipisci. Vel odit sequi dolore alias,
-          laudantium saepe! Autem quisquam a, nisi provident eveniet cumque
-          repellendus veritatis. Officiis, aliquid nam. Nesciunt explicabo ipsum
-          voluptatibus obcaecati ipsa. Soluta ducimus magni odit recusandae?
-        </p>
+      <div class="slider-container">
+        <div class="latest-title-wrapper">
+          <h1 class="latest-title">THE LATEST</h1>
+          <!-- <a href="" class="latest-link">GO TO NEWS PAGE</a> -->
+        </div>
+        <div class="slider">
+          <div class="card">
+            <a href="" class="card-link">
+              <div class="card-content">
+                <div class="image-container">
+                  <img
+                    src="../assets/index/news/patchnotes.png"
+                    alt=""
+                    class="card-image"
+                  />
+                </div>
+                <div class="card-category">Game Updates</div>
+                <div class="card-date">4/15/2025</div>
+                <h3 class="card-title">PALORANT Patch Notes 10.07</h3>
+                <p class="card-description">
+                  Bug fixes to Agents and UI, new Timeline view for console, and
+                  more.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="" class="card-link">
+              <div class="card-content">
+                <div class="image-container">
+                  <img
+                    src="../assets/index/news/waylayfanart.png"
+                    alt=""
+                    class="card-image"
+                  />
+                </div>
+                <div class="card-category">Community</div>
+                <div class="card-date">3/28/2025</div>
+                <h3 class="card-title">
+                  A spectrum of colors: Waylay art from the Community
+                </h3>
+                <p class="card-description">
+                  Check out waylay in 13 different ways through a million colors
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="" class="card-link">
+              <div class="card-content">
+                <div class="image-container">
+                  <img
+                    src="../assets/index/news/pct.png"
+                    alt=""
+                    srcset=""
+                    class="card-image"
+                  />
+                </div>
+                <div class="card-category">ESPORTS</div>
+                <div class="card-date">4/10/2025</div>
+                <h3 class="card-title">
+                  PCT Ascended team bundles are now available
+                </h3>
+                <p class="card-description">
+                  Celebrate the Ascension champions with the latest team
+                  capsules, and more.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="" class="card-link">
+              <div class="card-content">
+                <div class="image-container">
+                  <img
+                    src="../assets/index/news/smite.png"
+                    alt=""
+                    class="card-image"
+                  />
+                </div>
+                <div class="card-category">GAME UPDATES</div>
+                <div class="card-date">4/1/2025</div>
+                <h3 class="card-title">April Fools: Smite 2 Reveal</h3>
+                <p class="card-description">
+                  Yup it's happening. The best skin is back and better than
+                  ever.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="" class="card-link">
+              <div class="card-content">
+                <div class="image-container">
+                  <img
+                    src="../assets/index/news/pct.png"
+                    alt=""
+                    srcset=""
+                    class="card-image"
+                  />
+                </div>
+                <div class="card-category">ESPORTS</div>
+                <div class="card-date">3/19/2025</div>
+                <h3 class="card-title">
+                  Masters Toronto: Live audience and ticket sale information
+                </h3>
+                <p class="card-description">
+                  We're thrilled to announce that tickets for PALORANT Masters
+                  Toronto will be available
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="" class="card-link">
+              <div class="card-content">
+                <div class="image-container">
+                  <img
+                    src="../assets/index/news/patchnotes1.png"
+                    alt=""
+                    srcset=""
+                    class="card-image"
+                  />
+                </div>
+                <div class="card-category">GAME UPDATES</div>
+                <div class="card-date">4/1/2025</div>
+                <h3 class="card-title">PALORANT Patch Notes 10.06</h3>
+                <p class="card-description">
+                  New KAY/O mechanic and buffs, plus loads of bug fixes
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="slider-nav">
+          <button class="slider-btn prev-btn">&larr;</button>
+          <button class="slider-btn next-btn">&rarr;</button>
+        </div>
+      </div>
+
+      <div class="list-news-container">
+        <a href="" class="news-link">
+          <div class="news-link-wrapper">
+            <div class="news-img">
+              <img src="../assets/index/news/patchnotes1.png" alt="">
+            </div>
+            <div class="news-desc-wrapper">
+              <h1 class="news-desc-title">ENTER THE STADIUM - LESSONS LEARNED</h1>
+              <h3 class="news-desc-subtitle">Enter the Stadium - PART 3 SG</h3>
+              <h5 class="news-desc-date">APRIL 15, 2025</h5>
+            </div>
+          </div>
+        </a>
+        <a href="" class="news-link">
+          <div class="news-link-wrapper">
+            <div class="news-img">
+              <img src="../assets/index/news/patchnotes.png" alt="">
+            </div>
+            <div class="news-desc-wrapper">
+              <h1 class="news-desc-title">PALORANT PATCH NOTES 10.02</h1>
+              <h3 class="news-desc-subtitle">Bug fixes and agents with new ui</h3>
+              <h5 class="news-desc-date">MARET 13, 2024</h5>
+            </div>
+          </div>
+        </a>
+        <a href="" class="news-link">
+          <div class="news-link-wrapper">
+            <div class="news-img">
+              <img src="../assets/index/news/pct.png" alt="">
+            </div>
+            <div class="news-desc-wrapper">
+              <h1 class="news-desc-title">ENTER THE STADIUM - PCT LEARN FROM PROFESSIONALS</h1>
+              <h3 class="news-desc-subtitle">Enter the Stadium - PART 2 TOKYO</h3>
+              <h5 class="news-desc-date">APRIL 15, 2024</h5>
+            </div>
+          </div>
+        </a>
+        <a href="" class="news-link">
+          <div class="news-link-wrapper">
+            <div class="news-img">
+              <img src="../assets/index/news/pctmasters.png" alt="">
+            </div>
+            <div class="news-desc-wrapper">
+              <h1 class="news-desc-title">MASTERS TORONTO - QUALIFICATION WEEK</h1>
+              <h3 class="news-desc-subtitle">READY FOR SOMETHING BIG AND SURPIRISING</h3>
+              <h5 class="news-desc-date">MEI 13, 2025</h5>
+            </div>
+          </div>
+        </a>
+        <a href="" class="news-link">
+          <div class="news-link-wrapper">
+            <div class="news-img">
+              <img src="../assets/index/news/patchnotes1.png" alt="">
+            </div>
+            <div class="news-desc-wrapper">
+              <h1 class="news-desc-title">ENTER THE STADIUM - LESSONS LEARNED</h1>
+              <h3 class="news-desc-subtitle">Enter the Stadium - PART 3 SG</h3>
+              <h5 class="news-desc-date">APRIL 15, 202</h5>
+            </div>
+          </div>
+        </a>
+
+        <button class="all-agent-btn see-more-btn">SEE MORE</button>
       </div>
     </section>
+   
 
-    <footer></footer>
+    <footer>
+      <div class="social-media-wrapper">
+        <a href="">
+          <img src="../assets/partial/footer/discord.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../assets/partial/footer/facebook.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../assets/partial/footer/instagram.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../assets/partial/footer/x.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../assets/partial/footer/youtube.svg" alt="" srcset="" />
+        </a>
+      </div>
+      <div class="copyrights-wrapper">
+        <a href="">
+          <img src="../assets/partial/logo.png" alt="" />
+        </a>
+        <p class="copyrights-text">
+          &copy; 2020-2025 Giot Games, Inc. GIOT GAMES, PALORANT and any
+          associated logos are trademarks, service marks, and/or registered
+          trademarks of Giot Games, Inc.
+        </p>
+      </div>
+      <div class="terms-wrapper">
+        <a href="">PRIVACY NOTICE</a>
+        <a href="">TERMS OF SERVICE</a>
+        <a href="">COOKIE PREFERENCES</a>
+      </div>
+      <img src="../assets/partial/footer/esrb.png" alt="" class="esrb-icon" />
+    </footer>
   </body>
 </html>
