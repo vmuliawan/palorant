@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/index.css" />
-    <link rel="stylesheet" href="../style/news.css">
+    <link rel="stylesheet" href="../style/news.css" />
     <link rel="icon" href="../assets/partial/logo.png" type="image/png" />
     <script src="../js/index.js"></script>
     <title>Palorant</title>
   </head>
-  
   <body>
     <header>
       <nav>
@@ -44,9 +43,105 @@
     </header>
 
     <section>
+      <div class="news-detail-container">
+        <div class="news-detail-img">
+          <img src="../assets/index/news/patchnotes1.png" alt="" />
+        </div>
+        <div class="news-detail-desc">
+          <h1 class="news-detail-title">PALORANT PATCH NOTES 10.07</h1>
+          <h4 class="news-detail-subtitle">
+            Bug fixes to agent and UI, new timeline view for console and more.
+          </h4>
+          <p>Game Updates | Ezio Auditore | 4/15/2025</p>
+        </div>
+      </div>
+
+      <div class="detail-text-container">
+        <div class="detail-text-wrapper">
+          <div class="introduction-text">
+            <p>
+              Rise and shine, gamers, another patch has dropped! <br />
+              <br />
+              Lots of bug fixes for PC and console—fixes for nine Agents and
+              some UI improvements here and there. For console, you can now see
+              the Timeline view as part of the End of Game and Match Details
+              screens where you can review the events of the match round by
+              round (for Competitive, Swiftplay, and Unrated). <br />
+              <br />
+              Hope everyone has been keeping up with VCT because there’s only 1
+              month left before we know who’s moving on to Masters Toronto. What
+              team are you rooting for? <br /><br />
+              Have a good one! <br />
+              <br />
+              -Ash
+            </p>
+          </div>
+          <div class="info-text">
+            <p>
+                ALL PLATFORMS <br><br>
+                BUG FIXES<br><br>
+                Agents<br>
+                ⚪Reyna<br>
+                Fixed an issue where Reyna’s ultimate visuals could show through nearsights.<br><br>
+                ⚪Waylay<br>
+                Fixed an issue so Waylay will teleport properly back if she activates her Refract while picking up an ult orb.<br>
+                Fixed an issue where Waylay could activate Refract outside of the playable space on Abyss.<br>
+                Fixed an issue so Waylay should no longer end looking straight up in the air when she triggers Refract return when she's directly above the teleport point.<br><br>
+                ⚪KAY/O<br>
+                Fixed an issue where KAY/O’s revive SFX would persist after being killed while being resurrected by an ally during NULL/CMD.<br><br>
+                ⚪Vyse<br>
+                Fixed an issue where enemies could get stuck inside Vyse’s wall if the wall was overlapping with a smoke ability at specific times.<br>
+                Fixed an issue where enemies could get stuck in Vyse’s Shear if they jumped when it was triggered.<br>
+                Fixed an issue where Vyse’s Shear’s SFX could get stuck playing for enemies after moving out of range or if Vyse dies.<br><br>
+                ⚪Clove<br>
+                Fixed an issue where Clove’s Ruse battlefield view could be seen from underneath elevated locations while they have it equipped. (It was difficult to explain this so here’s what it looks like!)<br><br>
+                
+                
+                ⚪Cypher<br>
+                Fixed an issue where opponents who teleported out of the Trapwire after being hit could run through the same reactivated wire without getting tethered.<br><br>
+                ⚪Tejo<br>
+                Fixed an issue where Armageddon’s floor indicator persisted across rounds.<br><br>
+                ⚪Omen<br>
+                Fixed an issue where Omen could not see properly when casting Dark Cover if he was overlapping another dense smoke (smokes that obscure vision inside, e.g. Jett Cloudburst, Brimstone Sky Smoke, etc.).<br><br>
+                ⚪Clove<br>
+                Fixed an issue where Clove’s Pick-Me-Up duration was incorrect for observer/spectator clients.<br><br>
+                ⚪Deadlock<br>
+                Fixed an issue where Deadlock’s netted VFX could show through thin walls.<br><br>
+                ⚪Sova<br>
+                Fixed an issue where Sova’s arm and Drone overlapped each other in Agent Select.<br><br>
+                ⚪Chamber<br>
+                Fixed an issue where Chamber’s watch and glasses could be seen while nearsighted.<br><br>
+                ⚪General<br>
+                Fixed a bug that caused the Bolt weapons skin to sometimes glow brighter than intended and cause some photosensitivity issues.<br><br><br>
+                PC ONLY<br><br>
+                BUG FIXES<br><br>
+                Competitive Updates<br>
+                Fixed an issue in Match History and End of Game screens where hover text was missing from the Rank Shield icon if you had no Rank Shields remaining.<br><br>
+                ⚪Player Behavior<br>
+                Fixed an issue where Riot IDs written in certain languages were displayed with a cutoff in the Social Panel.<br><br>
+                ⚪Premier<br>
+                Fixed an issue where text sometimes did not fit in dropdowns on the Standings page.<br><br><br>
+                CONSOLE ONLY<br><br>
+                ⚪COMPETITIVE UPDATES<br><br>
+                We’ve added the Timeline view as part of the End of Game and Match Details screens where you can review the events of the match round by round.
+                This view is only available for Competitive, Swiftplay, and Unrated matches.<br><br>
+                BUG FIXES<br><br>
+                Agents<br><br>
+                ⚪Omen<br>
+                Fixed an issue where Omen’s Dark Cover targeting sensitivity could get stuck at a lower value until his next smoke cast if he died while attempting to cast Dark Cover.
+                ⚪Competitive Updates<br>
+                Fixed an issue on the leaderboard page where repeatedly switching between the filters and scrolling through entries on the page could cause you to lose the ability to select a different entry.<br><br>
+                ⚪Player Behavior<br>
+                Fixed an issue where players with long usernames overlapped with console logos in the Social Panel.<br>
+                Fixed an issue where sending a party invite to an Invalid Riot ID would lock the invite window until it was closed and reopened.<br>
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div class="slider-container">
         <div class="latest-title-wrapper">
-          <h1 class="latest-title">THE LATEST</h1>
+          <h1 class="latest-title">RELATED ARTICLES</h1>
           <!-- <a href="" class="latest-link">GO TO NEWS PAGE</a> -->
         </div>
         <div class="slider">
@@ -188,73 +283,7 @@
           <button class="slider-btn next-btn">&rarr;</button>
         </div>
       </div>
-
-      <div class="list-news-container">
-        <a href="news-detail.html" class="news-link">
-          <div class="news-link-wrapper">
-            <div class="news-img">
-              <img src="../assets/index/news/patchnotes1.png" alt="">
-            </div>
-            <div class="news-desc-wrapper">
-              <h1 class="news-desc-title">ENTER THE STADIUM - LESSONS LEARNED</h1>
-              <h3 class="news-desc-subtitle">Enter the Stadium - PART 3 SG</h3>
-              <h5 class="news-desc-date">APRIL 15, 2025</h5>
-            </div>
-          </div>
-        </a>
-        <a href="news-detail.html" class="news-link">
-          <div class="news-link-wrapper">
-            <div class="news-img">
-              <img src="../assets/index/news/patchnotes.png" alt="">
-            </div>
-            <div class="news-desc-wrapper">
-              <h1 class="news-desc-title">PALORANT PATCH NOTES 10.02</h1>
-              <h3 class="news-desc-subtitle">Bug fixes and agents with new ui</h3>
-              <h5 class="news-desc-date">MARET 13, 2024</h5>
-            </div>
-          </div>
-        </a>
-        <a href="news-detail.html" class="news-link">
-          <div class="news-link-wrapper">
-            <div class="news-img">
-              <img src="../assets/index/news/pct.png" alt="">
-            </div>
-            <div class="news-desc-wrapper">
-              <h1 class="news-desc-title">ENTER THE STADIUM - LEARN PCT</h1>
-              <h3 class="news-desc-subtitle">Enter the Stadium - PART 2 TOKYO</h3>
-              <h5 class="news-desc-date">APRIL 15, 2024</h5>
-            </div>
-          </div>
-        </a>
-        <a href="news-detail.html" class="news-link">
-          <div class="news-link-wrapper">
-            <div class="news-img">
-              <img src="../assets/index/news/pctmasters.png" alt="">
-            </div>
-            <div class="news-desc-wrapper">
-              <h1 class="news-desc-title">MASTERS TORONTO - QUALIFICATION WEEK</h1>
-              <h3 class="news-desc-subtitle">READY FOR SOMETHING BIG AND SURPIRISING</h3>
-              <h5 class="news-desc-date">MEI 13, 2025</h5>
-            </div>
-          </div>
-        </a>
-        <a href="news-detail.html" class="news-link">
-          <div class="news-link-wrapper">
-            <div class="news-img">
-              <img src="../assets/index/news/patchnotes1.png" alt="">
-            </div>
-            <div class="news-desc-wrapper">
-              <h1 class="news-desc-title">ENTER THE STADIUM - LESSONS LEARNED</h1>
-              <h3 class="news-desc-subtitle">Enter the Stadium - PART 3 SG</h3>
-              <h5 class="news-desc-date">APRIL 15, 202</h5>
-            </div>
-          </div>
-        </a>
-
-        <button class="all-agent-btn see-more-btn">SEE MORE</button>
-      </div>
     </section>
-   
 
     <footer>
       <div class="social-media-wrapper">
