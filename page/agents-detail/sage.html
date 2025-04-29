@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style/style.css" />
+    <link rel="stylesheet" href="../../style/index.css" />
+    <link rel="stylesheet" href="../../style/agents.css">
+    <link rel="icon" href="../../assets/partial/logo.png" type="image/png" />
+    <script src="../../js/index.js"></script>
+    <script src="../../js/agents.js"></script>
+    <title>Palorant</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          src="../../assets/partial/logo.png"
+          alt=""
+          srcset=""
+          class="logo-responsive"
+        />
+        <input type="checkbox" id="sidebar-active" />
+        <label for="sidebar-active" class="open-sidebar-button">
+          <img src="../../assets/partial/open.png" alt="notfound" srcset="" />
+        </label>
+
+        <div class="link-container">
+          <div class="logo-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+              <img src="../../assets/partial/close.png" alt="notfound" srcset="" />
+            </label>
+            <a href="" class="logo">
+              <img src="../../assets/partial/logo.png" alt="" srcset="" />
+            </a>
+          </div>
+          <a href="../../index.html" class="link-nav">Home</a>
+          <a href="../agents.html" class="link-nav">Agents</a>
+          <a href="../maps.html" class="link-nav">Maps</a>
+          <a href="../news.html" class="link-nav">Latest News</a>
+          <a href="../report.html" class="bug-report">Bug Report</a>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+        <div class="agent-detail-jumbotron">
+            <div class="agent-desc">
+                <img src="../../assets/index/roles/sentinel.png" alt="" srcset="" class="roles-icon">
+                <h1 class="agent-name">SAGE</h1>
+                <h3 class="agent-text">The stronghold of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.</h3>
+            </div>
+            <div class="agent-detail-img">
+            <img src="../../assets/agents/sage.png" alt="" srcset="">
+            </div>
+        </div>  
+        <div class="abilities-container">
+            <div class="abilities-icons">
+                <h1 class="special-abilities-title">SPECIAL <br> ABILITIES</h1>
+                <div class="icons">
+                    <img src="../../assets/agents/sage-abilities/sloworb.png" onclick="showAbility('ab1')" alt="Ability 1">
+                    <img src="../../assets/agents/sage-abilities/healingorb.png" onclick="showAbility('ab2')" alt="Ability 2">
+                    <img src="../../assets/agents/sage-abilities/barrierorb.png" onclick="showAbility('ab3')" alt="Ability 3">
+                    <img src="../../assets/agents/sage-abilities/resurrection.png" onclick="showAbility('ab4')" alt="Ability 4">
+                </div>
+            </div>
+
+            <div class="abilities-desc">
+              <div id="ab1" class="ability-card">
+                <video src="../../assets/agents/sage-abilities/Sage.mp4" autoplay muted loop></video>
+                <h1>SLOW ORB</h1>
+                <p>EQUIP a slowing orb. FIRE to throw a slowing orb forward that detonates upon landing, creating a lingering field that slows players caught inside of it.</p>
+              </div>
+              <div id="ab2" class="ability-card">
+                <video src="../../assets/agents/sage-abilities/Sage_2.mp4" autoplay muted loop></video>
+                <h1>HEALING ORB</h1>
+                <p>EQUIP a healing orb. FIRE with your crosshairs over a damaged ally to activate a heal-over-time on them. ALT FIRE while Sage is damaged to activate a self heal-over-time.</p>
+              </div>
+              <div id="ab3" class="ability-card">
+                <video src="../../assets/agents/sage-abilities/Sage_3.mp4" autoplay muted loop></video>
+                <h1>BARRIER ORB</h1>
+                <p>EQUIP a barrier orb. FIRE places a solid wall. ALT FIRE rotates the targeter.</p>
+              </div>
+              <div id="ab4" class="ability-card">
+                <video src="../../assets/agents/sage-abilities/Sage_4.mp4" autoplay muted loop></video>
+                <h1>RESURRECTION</h1>
+                <p>EQUIP a resurrection ability. FIRE with your crosshairs placed over a dead ally to begin resurrecting them. After a brief channel, the ally will be brought back to life with full health.</p>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="social-media-wrapper">
+        <a href="">
+          <img src="../../assets/partial/footer/discord.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../../assets/partial/footer/facebook.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../../assets/partial/footer/instagram.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../../assets/partial/footer/x.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../../assets/partial/footer/youtube.svg" alt="" srcset="" />
+        </a>
+      </div>
+      <div class="copyrights-wrapper">
+        <a href="">
+          <img src="../../assets/partial/logo.png" alt="" />
+        </a>
+        <p class="copyrights-text">
+          &copy; 2020-2025 Giot Games, Inc. GIOT GAMES, PALORANT and any
+          associated logos are trademarks, service marks, and/or registered
+          trademarks of Giot Games, Inc.
+        </p>
+      </div>
+      <div class="terms-wrapper">
+        <a href="">PRIVACY NOTICE</a>
+        <a href="">TERMS OF SERVICE</a>
+        <a href="">COOKIE PREFERENCES</a>
+      </div>
+      <img src="../../assets/partial/footer/esrb.png" alt="" class="esrb-icon" />
+    </footer>
+  </body>
+</html>

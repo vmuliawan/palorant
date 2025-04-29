@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/report.css">
+    <link rel="icon" href="../assets/partial/logo.png" type="image/png" />
+    <script src="../js/report.js"></script>
+    <title>Palorant</title>
+  </head>
+  
+  <body>
+    <header>
+      <nav>
+        <img
+          src="../assets/partial/logo.png"
+          alt=""
+          srcset=""
+          class="logo-responsive"
+        />
+        <input type="checkbox" id="sidebar-active" />
+        <label for="sidebar-active" class="open-sidebar-button">
+          <img src="../assets/partial/open.png" alt="notfound" srcset="" />
+        </label>
+
+        <div class="link-container">
+          <div class="logo-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+              <img src="../assets/partial/close.png" alt="notfound" srcset="" />
+            </label>
+            <a href="" class="logo">
+              <img src="../assets/partial/logo.png" alt="" srcset="" />
+            </a>
+          </div>
+          <a href="../index.html" class="link-nav">Home</a>
+          <a href="agents.html" class="link-nav">Agents</a>
+          <a href="maps.html" class="link-nav">Maps</a>
+          <a href="news.html" class="link-nav">Latest News</a>
+          <a href="report.html" class="bug-report">Bug Report</a>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="form-container">
+        <form id="reportForm" action="">
+          <h1 class="text-report">REPORT</h1>
+          <div class="input-wrapper">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" placeholder="ex: feilhuang" autocomplete="off" autofocus>
+          <div id="usernameError" class="error-message"></div>
+          </div>
+
+          <div class="input-wrapper">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="ex: fei@gmail.com">
+          <div id="emailError" class="error-message"></div>
+          </div>
+
+          <div class="input-wrapper">
+          <label for="server">Server</label>
+          <select name="server" id="server">
+            <option value="">Select a server</option>
+            <option value="APAC">APAC</option>  
+            <option value="EMEA">EMEA</option>
+            <option value="AMERICA">AMERICA</option>
+            <option value="CHINA">CHINA</option>
+          </select>
+          <div id="serverError" class="error-message"></div>
+          </div>
+
+          <div class="input-wrapper">
+          <label for="description">Description</label>
+          <textarea name="description" id="description" cols="30" rows="5" placeholder="Describe your issue..."></textarea>
+          <div class="char-counter" id="descCounter">0/300 characters</div>
+          <div id="descriptionError" class="error-message"></div>
+          </div>
+
+          <div class="input-wrapper">
+          <label for="report-img">Image</label>
+          <input type="file" id="report-img" name="report-img" accept="image/*">
+          <img id="preview" class="preview-image" alt="Preview">
+          <div id="imageError" class="error-message"></div>
+          </div>  
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="agree" id="agree">
+            <label for="agree" class="label-agree">I agree with terms and conditions</label>
+          </div>
+          <div id="agreeError" class="error-message"></div>
+        
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+   
+
+    <footer>
+      <div class="social-media-wrapper">
+        <a href="">
+          <img src="../assets/partial/footer/discord.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../assets/partial/footer/facebook.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../assets/partial/footer/instagram.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../assets/partial/footer/x.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../assets/partial/footer/youtube.svg" alt="" srcset="" />
+        </a>
+      </div>
+      <div class="copyrights-wrapper">
+        <a href="">
+          <img src="../assets/partial/logo.png" alt="" />
+        </a>
+        <p class="copyrights-text">
+          &copy; 2020-2025 Giot Games, Inc. GIOT GAMES, PALORANT and any
+          associated logos are trademarks, service marks, and/or registered
+          trademarks of Giot Games, Inc.
+        </p>
+      </div>
+      <div class="terms-wrapper">
+        <a href="">PRIVACY NOTICE</a>
+        <a href="">TERMS OF SERVICE</a>
+        <a href="">COOKIE PREFERENCES</a>
+      </div>
+      <img src="../assets/partial/footer/esrb.png" alt="" class="esrb-icon" />
+    </footer>
+  </body>
+</html>

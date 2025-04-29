@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style/style.css" />
+    <link rel="stylesheet" href="../../style/index.css" />
+    <link rel="stylesheet" href="../../style/agents.css">
+    <link rel="icon" href="../../assets/partial/logo.png" type="image/png" />
+    <script src="../../js/index.js"></script>
+    <script src="../../js/agents.js"></script>
+    <title>Palorant</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          src="../../assets/partial/logo.png"
+          alt=""
+          srcset=""
+          class="logo-responsive"
+        />
+        <input type="checkbox" id="sidebar-active" />
+        <label for="sidebar-active" class="open-sidebar-button">
+          <img src="../../assets/partial/open.png" alt="notfound" srcset="" />
+        </label>
+
+        <div class="link-container">
+          <div class="logo-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+              <img src="../../assets/partial/close.png" alt="notfound" srcset="" />
+            </label>
+            <a href="" class="logo">
+              <img src="../../assets/partial/logo.png" alt="" srcset="" />
+            </a>
+          </div>
+          <a href="../../index.html" class="link-nav">Home</a>
+          <a href="../agents.html" class="link-nav">Agents</a>
+          <a href="../maps.html" class="link-nav">Maps</a>
+          <a href="../news.html" class="link-nav">Latest News</a>
+          <a href="../report.html" class="bug-report">Bug Report</a>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+        <div class="agent-detail-jumbotron">
+            <div class="agent-desc">
+                <img src="../../assets/index/roles/duelist.png" alt="" srcset="" class="roles-icon">
+                <h1 class="agent-name">RAZE</h1>
+                <h3 class="agent-text">Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of "boom."</h3>
+            </div>
+            <div class="agent-detail-img">
+            <img src="../../assets/agents/raze.png" alt="" srcset="">
+            </div>
+        </div>  
+        <div class="abilities-container">
+            <div class="abilities-icons">
+                <h1 class="special-abilities-title">SPECIAL <br> ABILITIES</h1>
+                <div class="icons">
+                    <img src="../../assets/agents/raze-abilities/blastpack.png" onclick="showAbility('ab1')" alt="Ability 1">
+                    <img src="../../assets/agents/raze-abilities/paintshell.png" onclick="showAbility('ab2')" alt="Ability 2">
+                    <img src="../../assets/agents/raze-abilities/boombot.png" onclick="showAbility('ab3')" alt="Ability 3">
+                    <img src="../../assets/agents/raze-abilities/showstopper.png" onclick="showAbility('ab4')" alt="Ability 4">
+                </div>
+            </div>
+
+            <div class="abilities-desc">
+              <div id="ab1" class="ability-card">
+                <video src="../../assets/agents/raze-abilities/blastpack.mp4" autoplay muted loop></video>
+                <h1>BLAST PACK</h1>
+                <p>INSTANTLY throw a Blast Pack that will stick to surfaces. RE-USE the ability after deployment to detonate, damaging and moving anything hit. Raze isn't damaged by this ability, but will still take fall damage if launched up far enough.</p>
+              </div>
+              <div id="ab2" class="ability-card">
+                <video src="../../assets/agents/raze-abilities/paintshell.mp4" autoplay muted loop></video>
+                <h1>PAINT SHELLS</h1>
+                <p>EQUIP a cluster grenade. FIRE to throw the grenade, which does damage and creates sub-munitions, each doing damage to anyone in their range. ALT FIRE to lob. Paint Shells charge resets every two kills.</p>
+              </div>
+              <div id="ab3" class="ability-card">
+                <video src="../../assets/agents/raze-abilities/boombot.mp4" autoplay muted loop></video>
+                <h1>BOOMBOT</h1>
+                <p>EQUIP a Boom Bot. FIRE will deploy the bot, causing it to travel in a straight line on the ground, bouncing off walls. The Boom Bot will lock on to any enemies in its frontal cone and chase them, exploding for heavy damage if it reaches them.</p>
+              </div>
+              <div id="ab4" class="ability-card">
+                <video src="../../assets/agents/raze-abilities/showstopper.mp4" autoplay muted loop></video>
+                <h1>SHOWSTOPPER</h1>
+                <p>EQUIP a rocket launcher. FIRE to shoot a rocket that does massive area damage on contact with anything.</p>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="social-media-wrapper">
+        <a href="">
+          <img src="../../assets/partial/footer/discord.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../../assets/partial/footer/facebook.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../../assets/partial/footer/instagram.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../../assets/partial/footer/x.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../../assets/partial/footer/youtube.svg" alt="" srcset="" />
+        </a>
+      </div>
+      <div class="copyrights-wrapper">
+        <a href="">
+          <img src="../../assets/partial/logo.png" alt="" />
+        </a>
+        <p class="copyrights-text">
+          &copy; 2020-2025 Giot Games, Inc. GIOT GAMES, PALORANT and any
+          associated logos are trademarks, service marks, and/or registered
+          trademarks of Giot Games, Inc.
+        </p>
+      </div>
+      <div class="terms-wrapper">
+        <a href="">PRIVACY NOTICE</a>
+        <a href="">TERMS OF SERVICE</a>
+        <a href="">COOKIE PREFERENCES</a>
+      </div>
+      <img src="../../assets/partial/footer/esrb.png" alt="" class="esrb-icon" />
+    </footer>
+  </body>
+</html>

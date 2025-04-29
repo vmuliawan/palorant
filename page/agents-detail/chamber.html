@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style/style.css" />
+    <link rel="stylesheet" href="../../style/index.css" />
+    <link rel="stylesheet" href="../../style/agents.css">
+    <link rel="icon" href="../../assets/partial/logo.png" type="image/png" />
+    <script src="../../js/index.js"></script>
+    <script src="../../js/agents.js"></script>
+    <title>Palorant</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          src="../../assets/partial/logo.png"
+          alt=""
+          srcset=""
+          class="logo-responsive"
+        />
+        <input type="checkbox" id="sidebar-active" />
+        <label for="sidebar-active" class="open-sidebar-button">
+          <img src="../../assets/partial/open.png" alt="notfound" srcset="" />
+        </label>
+
+        <div class="link-container">
+          <div class="logo-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+              <img src="../../assets/partial/close.png" alt="notfound" srcset="" />
+            </label>
+            <a href="" class="logo">
+              <img src="../../assets/partial/logo.png" alt="" srcset="" />
+            </a>
+          </div>
+          <a href="../../index.html" class="link-nav">Home</a>
+          <a href="../agents.html" class="link-nav">Agents</a>
+          <a href="../maps.html" class="link-nav">Maps</a>
+          <a href="../news.html" class="link-nav">Latest News</a>
+          <a href="../report.html" class="bug-report">Bug Report</a>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+        <div class="agent-detail-jumbotron">
+            <div class="agent-desc">
+                <img src="../../assets/index/roles/sentinel.png" alt="" srcset="" class="roles-icon">
+                <h1 class="agent-name">CHAMBER</h1>
+                <h3 class="agent-text">Well-dressed and well-armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.</h3>
+            </div>
+            <div class="agent-detail-img">
+            <img src="../../assets/agents/chamber.png" alt="" srcset="">
+            </div>
+        </div>  
+        <div class="abilities-container">
+            <div class="abilities-icons">
+                <h1 class="special-abilities-title">SPECIAL <br> ABILITIES</h1>
+                <div class="icons">
+                    <img src="../../assets/agents/chamber-abilities/headhunter.png" onclick="showAbility('ab1')" alt="Ability 1">
+                    <img src="../../assets/agents/chamber-abilities/rendezvouz.png" onclick="showAbility('ab2')" alt="Ability 2">
+                    <img src="../../assets/agents/chamber-abilities/trademark.png" onclick="showAbility('ab3')" alt="Ability 3">
+                    <img src="../../assets/agents/chamber-abilities/tourdeforce.png" onclick="showAbility('ab4')" alt="Ability 4">
+                </div>
+            </div>
+
+            <div class="abilities-desc">
+              <div id="ab1" class="ability-card">
+                <video src="../../assets/agents/chamber-abilities/Chamber.mp4" autoplay muted loop></video>
+                <h1>HEAD HUNTER</h1>
+                <p>ACTIVATE to equip a heavy pistol. ALT FIRE with the pistol equipped to aim down sights.</p>
+              </div>
+              <div id="ab2" class="ability-card">
+                <video src="../../assets/agents/chamber-abilities/Chamber_2.mp4" autoplay muted loop></video>
+                <h1>RENDEZVOUZ</h1>
+                <p>EQUIP a teleport anchor. FIRE to place it on the ground. While on the ground and in range of the anchor, REACTIVATE to quickly teleport to the anchor. The anchor can be picked up to be REDEPLOYED.</p>
+              </div>
+              <div id="ab3" class="ability-card">
+                <video src="../../assets/agents/chamber-abilities/Chamber_3.mp4" autoplay muted loop></video>
+                <h1>TRADEMARK</h1>
+                <p>EQUIP a trap that scans for enemies. FIRE to place it on the ground. When a visible enemy comes in range, the trap counts down and then destabilizes the terrain around them, creating a lingering field that Slows players caught inside of it. The trap can be picked up to be REDEPLOYED.</p>
+              </div>
+              <div id="ab4" class="ability-card">
+                <video src="../../assets/agents/chamber-abilities/Chamber_4.mp4" autoplay muted loop></video>
+                <h1>TOUR DE FORCE</h1>
+                <p>ACTIVATE to summon a powerful, custom sniper rifle that will kill an enemy with any direct hit to the upper body. ALT FIRE to aim down sights. Killing an enemy creates a lingering field that Slows players caught inside of it.</p>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="social-media-wrapper">
+        <a href="">
+          <img src="../../assets/partial/footer/discord.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../../assets/partial/footer/facebook.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../../assets/partial/footer/instagram.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../../assets/partial/footer/x.svg" alt="" srcset="" />
+        </a>
+        <a href="">
+          <img src="../../assets/partial/footer/youtube.svg" alt="" srcset="" />
+        </a>
+      </div>
+      <div class="copyrights-wrapper">
+        <a href="">
+          <img src="../../assets/partial/logo.png" alt="" />
+        </a>
+        <p class="copyrights-text">
+          &copy; 2020-2025 Giot Games, Inc. GIOT GAMES, PALORANT and any
+          associated logos are trademarks, service marks, and/or registered
+          trademarks of Giot Games, Inc.
+        </p>
+      </div>
+      <div class="terms-wrapper">
+        <a href="">PRIVACY NOTICE</a>
+        <a href="">TERMS OF SERVICE</a>
+        <a href="">COOKIE PREFERENCES</a>
+      </div>
+      <img src="../../assets/partial/footer/esrb.png" alt="" class="esrb-icon" />
+    </footer>
+  </body>
+</html>
