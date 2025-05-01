@@ -512,6 +512,33 @@
     transition: .2s ease-in-out;
 }
 
+.palorant-desc-container{
+    height: 40rem;
+}
+.about-palorant-wrapper{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    z-index: 1;
+    color: var(--neutral-color);
+}
+.palorant-desc-title{
+    text-shadow: 4px 4px 4px var(--secondary-color);
+}
+.palorant-desc-subtitle{
+    margin-bottom: 0;
+    text-shadow: 4px 4px 4px var(--primary-color);
+    margin-bottom: 16px;
+    
+}
+.palorant-desc-text{
+    max-width: 600px;
+    text-shadow: 4px 4px 4px var(--primary-color);
+    margin-bottom: 32px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
 
 @media (min-width: 600px) {
     .card {
@@ -533,9 +560,15 @@
     .best-agent-desc-wrapper{
         left: 15rem;
     }
+    .about-palorant-wrapper{
+        left: 5%;
+        top: 25%;
+        right: 5%;
+    }
     .best-agent-wrapper{
         height: 65rem;
     }
+    
     .card-image{
         height: 100%;
     }
