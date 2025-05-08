@@ -417,7 +417,7 @@
 }
 
 .subtitle-maps{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 /* ROLES */
@@ -536,6 +536,7 @@
     max-width: 600px;
     text-shadow: 4px 4px 4px var(--primary-color);
     margin-bottom: 32px;
+    font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.5);
 
 }
